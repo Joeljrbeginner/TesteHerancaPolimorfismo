@@ -1,0 +1,112 @@
+public class Funcionario extends funcionario {
+
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private int cpf;
+	
+	public String getNome(){
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	
+	
+}
+-------------------------------------------------------------------------
+public class Gerente extends Funcionario {
+	
+	
+	private static final String Nome = null;
+	private String salario;
+	public Gerente(String string, int i) {
+	}
+
+	public String getNome() {
+		return  Nome;
+		
+	}
+	
+	public String getSalario() {
+		return salario;
+	}
+	public void setSalario(String salario) {
+		this.salario = salario;
+	}
+	
+	public double calcularSalarioLiquido(){
+		return 0;
+	}
+	
+
+}
+------------------------------------------------------------------
+public class Vendedor extends Funcionario {
+	
+	
+	private double[] comissao;
+	private double[] premio;
+		
+	public double[] getComissao() {
+		return comissao;
+	}
+	public void setComissao(double[] comissao) {
+		this.comissao = comissao;
+	}
+	
+	public double[] getPremio() {
+		return premio;
+	}
+	public void setPremio(double[] premio) {
+		this.premio = premio;
+	}
+	
+	
+	public double calcularMedia() {
+		return 0;
+	}
+	
+	public boolean verificarPremio() {
+		return true;
+	}
+}
+
+----------------------------------------------------------------
+public class TesteFuncionario {
+	
+	public static void main(String[] args) 
+	{
+		Gerente joel = new Gerente ("joel" , 999);
+		Funcionario jose = new funcionario ("jose", 333; "contabilidade");
+		system maria = new vendedor ("maria",111);
+		System.out.println(joel.getCpf()));
+		System.out.println(jose.getNome()));
+		System.out.println(maria.getNome));
+
+
+		
+		
+		}
+}
+
+
+______
